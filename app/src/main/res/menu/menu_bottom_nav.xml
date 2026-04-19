@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/dashboardFragment"
+        android:icon="@drawable/ic_dashboard"
+        android:title="Dashboard"/>
+
+    <item
+        android:id="@+id/customersFragment"
+        android:icon="@drawable/ic_customers"
+        android:title="Customers"/>
+
+    <item
+        android:id="@+id/ordersFragment"
+        android:icon="@drawable/ic_orders"
+        android:title="Orders"/>
+
+    <item
+        android:id="@+id/invoicesFragment"
+        android:icon="@drawable/ic_invoice"
+        android:title="Invoices"/>
+
+    <item
+        android:id="@+id/followUpFragment"
+        android:icon="@drawable/ic_followup"
+        android:title="Follow-up"/>
+
+</menu>

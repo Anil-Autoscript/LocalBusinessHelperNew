@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/dashboardFragment">
+
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.localbusiness.helper.ui.dashboard.DashboardFragment"
+        android:label="Dashboard">
+        <action
+            android:id="@+id/action_dashboard_to_addOrder"
+            app:destination="@id/addOrderFragment"/>
+        <action
+            android:id="@+id/action_dashboard_to_settings"
+            app:destination="@id/settingsFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/customersFragment"
+        android:name="com.localbusiness.helper.ui.customers.CustomersFragment"
+        android:label="Customers">
+        <action
+            android:id="@+id/action_customers_to_addCustomer"
+            app:destination="@id/addCustomerFragment"/>
+        <action
+            android:id="@+id/action_customers_to_detail"
+            app:destination="@id/customerDetailFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/addCustomerFragment"
+        android:name="com.localbusiness.helper.ui.customers.AddCustomerFragment"
+        android:label="Add Customer">
+        <argument
+            android:name="customerId"
+            app:argType="long"
+            android:defaultValue="0"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/customerDetailFragment"
+        android:name="com.localbusiness.helper.ui.customers.CustomerDetailFragment"
+        android:label="Customer Detail">
+        <argument
+            android:name="customerId"
+            app:argType="long"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/ordersFragment"
+        android:name="com.localbusiness.helper.ui.orders.OrdersFragment"
+        android:label="Orders">
+        <action
+            android:id="@+id/action_orders_to_addOrder"
+            app:destination="@id/addOrderFragment"/>
+        <action
+            android:id="@+id/action_orders_to_detail"
+            app:destination="@id/orderDetailFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/addOrderFragment"
+        android:name="com.localbusiness.helper.ui.orders.AddOrderFragment"
+        android:label="Add Order">
+        <argument
+            android:name="orderId"
+            app:argType="long"
+            android:defaultValue="0"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/orderDetailFragment"
+        android:name="com.localbusiness.helper.ui.orders.OrderDetailFragment"
+        android:label="Order Detail">
+        <argument
+            android:name="orderId"
+            app:argType="long"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/invoicesFragment"
+        android:name="com.localbusiness.helper.ui.invoices.InvoicesFragment"
+        android:label="Invoices &amp; Payments">
+        <action
+            android:id="@+id/action_invoices_to_orderDetail"
+            app:destination="@id/orderDetailFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/followUpFragment"
+        android:name="com.localbusiness.helper.ui.followup.FollowUpFragment"
+        android:label="Follow-up">
+        <action
+            android:id="@+id/action_followup_to_orderDetail"
+            app:destination="@id/orderDetailFragment"/>
+        <action
+            android:id="@+id/action_followup_to_addOrder"
+            app:destination="@id/addOrderFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.localbusiness.helper.ui.settings.SettingsFragment"
+        android:label="Settings"/>
+
+</navigation>

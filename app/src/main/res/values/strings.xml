@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Local Business Helper</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="customers">Customers</string>
+    <string name="orders">Orders</string>
+    <string name="invoices">Invoices</string>
+    <string name="follow_up">Follow-up</string>
+    <string name="settings">Settings</string>
+    <string name="add_customer">Add Customer</string>
+    <string name="add_order">Add Order</string>
+    <string name="sync_now">Sync Now</string>
+    <string name="no_data">No data found</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete">Delete</string>
+    <string name="edit">Edit</string>
+    <string name="search">Search</string>
+</resources>
